@@ -1,0 +1,161 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', 'Tahoma', sans-serif;
+}
+
+header, main, footer {
+	max-width: 1024px;
+	margin: 0 auto;
+	width: 100%;
+}
+.header {
+	position: relative;
+	height: 100vh;
+	max-height: 700px;	
+	background-image: url('../img/header.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.header-nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 70px;
+	background-color: rgba(0,0,0,0.3);
+}
+.header-nav_links {
+	display: flex;
+}
+.header-nav_links li {
+	position: relative;
+	margin-right: 50px;
+	font-size: 22px;
+	list-style-type: none;
+	cursor: pointer;
+}
+.header-nav_links li a {
+	color: white;
+	text-decoration: none;
+}
+.header-nav_links li::after {
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	transform: scale(0);	
+	transition: 0.2s all;
+	content:'';
+}
+.header-nav_links li:hover::after {
+	transform: scale(1);
+}
+.header-info {
+	margin: 100px 0 0 50px;
+}
+.header-info h1 {
+	font-size: 40px;
+}
+.header-info ul {
+	display: flex;
+}
+.header-info ul li {
+	list-style-type: none;
+	margin: 5px;
+}
+.header-info ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	font-size: 23px;
+	color: #000;
+	text-decoration: none;
+	border-radius: 50%;
+	transition: 0.2s all;
+}
+.header-info ul li:hover a {
+	color: white;
+	background-color: #000;
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+section {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap:40px;	
+	margin: 50px 0;
+}
+.subject {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 40px;
+	border-right: 1px dashed black;
+}
+.subject h2 {
+	font-size: 35px;
+	text-align: right;
+}
+.description {
+	padding: 5px;
+	font-size: 19px;
+	line-height: 1.3;
+}
+.description-skills ul li {
+	list-style-type: none;
+	margin: 5px 0;
+}
+.description-skills ul li small {
+	font-size: 14px;
+}
+.description-code p {
+	margin: 25px 0 0;
+}
+.code-example{
+	padding: 25px;
+	margin-top: 20px;
+	height: 100px;
+	font-style: italic;
+	border-radius: 15px;
+	background-color: lightblue;
+	box-shadow: inset 0 0 10px black;
+}
+.description-exp ul li {
+	margin: 5px 0;
+	list-style-type: none;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	background-color: rgba(0,0,0,0.3);
+}
+.footer-contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer-links {
+	display: flex;
+}
+.footer-links li {
+	list-style-type: none;
+}
+.footer-links li a {
+	margin: 0 3px;
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+}
+.footer-links li:hover a {
+	color: white;
+}
